@@ -12,12 +12,19 @@
 }
 
 body{
-    display: block;
+    
     text-transform: uppercase; /*Transforma texto em caixa alta*/
 }
 
 .logo{
-    color: rgb(0, 255, 242);
+    color: rgb(131, 241, 235);
+    transition: 0.5s;
+    letter-spacing: 0.5rem;
+}
+.logo:hover{
+    color: rgb(3, 45, 43);
+    transition: 0.5s;
+    letter-spacing: 0.7rem;
 }
 
 .logo-css{
@@ -38,7 +45,7 @@ body{
     text-decoration: none;                     /*retira efeitos do texto*/
     letter-spacing: 0.2rem;                    /*efeito de espaçamento*/
     transition: 0.5s;                          /* Duração efeito de transição*/
-    border-radius: 2%;                         /* Efeito de arrendondamento de bordas*/
+    border-radius: 3%;                         /* Efeito de arrendondamento de bordas*/
     /*clip-path: polygon(89% 0, 100% 50%, 90% 99%, 0% 100%, 8% 51%, 0% 0%);  *//* efeito flecha*/
 }
 
@@ -73,10 +80,11 @@ body{
     display: flex;
     background-color: rgb(132, 0, 255);
     height: 8vw;                        /*Altura do container logo+navbar*/
-    
+    padding: 0 16 0 16;
     flex-direction: row;                /*Direção flex em linha*/
     align-items: center;                
     justify-content: space-between;     /*Ajusta items dentro do conteiner*/
+    /*border-radius: 2%;*/
     /*background: transparent;*/
 }
 
@@ -85,7 +93,7 @@ body{
     flex-direction: row;
     align-items: center;
     padding-left: 2%;
-    
+    border-radius: 2%;
     /*justify-content: space-around;*/
 }
 
@@ -97,19 +105,57 @@ body{
     align-items: flex-end;
 }
 
-.container-main{
+.container-main{ 
+    
     display: flex;
-    height: 77vh;
-    box-sizing: content-box;
+    flex-direction: row;                     /*Direção flex em linha*/
+    height: 79vh;
+    align-items: center;                
+    flex-wrap: wrap;
+    padding: 0;
+    
     background-color: rgb(252, 251, 250);
-    /*flex-direction: row;*/
+    justify-content: space-between;          /*Ajusta items dentro do conteiner*/
     /*justify-content: space-around;*/
 }
-
-.fotos{
-    bottom: 0;
     
+.projetos-stream{
+    display: flex;
+    width: auto;   
+    height: 45vh;                           /*Altura do container dentro do viewport*/
 }
+/*Imagem stream*/
+.img-stream{
+    padding-left: 5vw;
+} 
+
+.img-commerce{
+    padding-right: 5vw;
+    transition: 0.5s;
+    
+    /*letter-spacing: 1rem;*/
+}
+
+.projetos-commerce{
+    display: flex;
+    width: auto;
+    height: 45vh;                        /*Altura do container dentro do viewport*/
+   
+}
+/*Imagem e-commerce*/
+
+.title-stream-commerce{
+    background-color: transparent;
+    display: flex;
+    padding-right: 20vw;
+    padding-left: 20vw;
+    width: 58vw;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+    /*Terceira parte*/
 .container-news{
     text-align: center;
     background-color: blueviolet;
