@@ -6,53 +6,50 @@
     background-position: center;
     min-height: auto;
     */
-    background-color: white;
+    background-color: transparent;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /*opacity: 0.95;*/
-    box-sizing: border-box;
-    
+    /*opacity: 0.95;*/  
 }
 
 body{
-    display: flex;
-    text-transform: uppercase;
+    display: block;
+    text-transform: uppercase; /*Transforma texto em caixa alta*/
+}
+
+.logo{
+    color: rgb(0, 255, 242);
 }
 
 .logo-css{
-    width: 5vw;
-    max-width: 8rem;
+    width: 5vw;         /*Largura de 5 viewwidth. Máx 100vw*/   
     margin: 10px;
 }
 
 .logo-html{
     width: 5vw;
-    max-width: 8rem;
-    margin: 10px;
-    
+    margin: 10px;  
 }
 
 .nav-bar{
-    display: flex;
-    box-sizing: border-box;
-    max-width: 8rem;
     background-color: rgb(183, 238, 229);
-    padding: 1.2rem 1.3rem;     /*Tamanho do elemento*/
+    padding: 12px;                             /*Tamanho do elemento*/
     color: rgb(89, 82, 217);  
-    margin: 20px;               /*Margem entre elementos*/
-    align-items: center;        /*Alinha itens no centro*/
-    justify-content: center;    /* */
-    text-decoration: none;      /*retira efeitos do texto */
-    letter-spacing: 2px;        /*efeito de espaçamento */
-    transition: 0.5s;           /* Efeito de transição*/
+    margin: 0.5rem;                            /*Margem entre elementos*/
+    text-decoration: none;                     /*retira efeitos do texto*/
+    letter-spacing: 0.2rem;                    /*efeito de espaçamento*/
+    transition: 0.5s;                          /* Duração efeito de transição*/
+    border-radius: 2%;                         /* Efeito de arrendondamento de bordas*/
     /*clip-path: polygon(89% 0, 100% 50%, 90% 99%, 0% 100%, 8% 51%, 0% 0%);  *//* efeito flecha*/
 }
+
 .nav-bar:hover{   /*:hover altera estilo do botão ao passar o curso do mouse em cima do mesmo*/
-    color: rgb(15, 2, 249);
-    background-color: rgb(3, 211, 176);
-    letter-spacing: 3px;
+    color: rgb(242, 242, 246);
+    background-color: rgb(62, 84, 81);
+    letter-spacing: 0.3rem; 
     /*clip-path: polygon(100% 0%, 89% 51%, 100% 100%, 12% 100%, 0% 50%, 11% 0); *//* efeito flecha*/
 }
 
+/*
 .botao{
     float: right;
     padding-right: 5rem;
@@ -69,7 +66,54 @@ body{
     text-align: center;
     line-height: 20px;
     cursor: pointer;
+}
+*/
+
+.container{
+    display: flex;
+    background-color: rgb(132, 0, 255);
+    height: 8vw;                        /*Altura do container logo+navbar*/
     
+    flex-direction: row;                /*Direção flex em linha*/
+    align-items: center;                
+    justify-content: space-between;     /*Ajusta items dentro do conteiner*/
+    /*background: transparent;*/
+}
+
+.container-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2%;
+    
+    /*justify-content: space-around;*/
+}
+
+.container-nav{
+    display: flex;
+    flex-wrap: wrap;                        /*O que não cabe na linha, vai para a linha de baixo*/
+    width: auto;  
+    padding-right: 2%;
+    align-items: flex-end;
+}
+
+.container-main{
+    display: flex;
+    height: 77vh;
+    box-sizing: content-box;
+    background-color: rgb(252, 251, 250);
+    /*flex-direction: row;*/
+    /*justify-content: space-around;*/
+}
+
+.fotos{
+    bottom: 0;
+    
+}
+.container-news{
+    text-align: center;
+    background-color: blueviolet;
+    height: 100vh;
 }
 
 @media (max-width:1301){
