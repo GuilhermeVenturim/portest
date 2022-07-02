@@ -105,32 +105,40 @@ body{
     align-items: flex-end;
 }
 
+.h3-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-bottom: -5%;
+}
+
 .container-main{ 
     
     display: flex;
-    flex-direction: row;                     /*Direção flex em linha*/
+    /*flex-direction: row;                     /*Direção flex em linha*/
     height: 79vh;
-    align-items: center;                
+    align-content: space-around;                
     flex-wrap: wrap;
     padding: 0;
     
     background-color: rgb(252, 251, 250);
-    justify-content: space-between;          /*Ajusta items dentro do conteiner*/
+    justify-content: space-around;          /*Ajusta items dentro do conteiner*/
     /*justify-content: space-around;*/
 }
-    
+   
 .projetos-stream{
     display: flex;
     width: auto;   
-    height: 45vh;                           /*Altura do container dentro do viewport*/
+    height: 40vh;                           /*Altura do container dentro do viewport*/
 }
 /*Imagem stream*/
 .img-stream{
-    padding-left: 5vw;
+    padding: 0;
 } 
 
 .img-commerce{
-    padding-right: 5vw;
+    
     transition: 0.5s;
     
     /*letter-spacing: 1rem;*/
@@ -139,7 +147,7 @@ body{
 .projetos-commerce{
     display: flex;
     width: auto;
-    height: 45vh;                        /*Altura do container dentro do viewport*/
+    height: 40vh;                        /*Altura do container dentro do viewport*/
    
 }
 /*Imagem e-commerce*/
