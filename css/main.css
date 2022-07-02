@@ -12,17 +12,20 @@
 }
 
 body{
-    
+    background-color: rgb(255, 255, 255);
     text-transform: uppercase; /*Transforma texto em caixa alta*/
 }
 
 .logo{
-    color: rgb(131, 241, 235);
+    font-size: 1.75rem;
+    color: rgb(0, 255, 242);
     transition: 0.5s;
     letter-spacing: 0.5rem;
+    
+    background-color: transparent;
 }
 .logo:hover{
-    color: rgb(3, 45, 43);
+    color: rgb(9, 181, 172);
     transition: 0.5s;
     letter-spacing: 0.7rem;
 }
@@ -80,7 +83,7 @@ body{
     display: flex;
     background-color: rgb(132, 0, 255);
     height: 8vw;                        /*Altura do container logo+navbar*/
-    padding: 0 16 0 16;
+    
     flex-direction: row;                /*Direção flex em linha*/
     align-items: center;                
     justify-content: space-between;     /*Ajusta items dentro do conteiner*/
@@ -106,23 +109,24 @@ body{
 }
 
 .h3-main{
+    color: rgb(164, 68, 254);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 2%;
     margin-bottom: -5%;
+    align-content: space-around;
+    width: auto;
+    height: auto;
+    font-size: 2rem;
 }
 
 .container-main{ 
-    
     display: flex;
     /*flex-direction: row;                     /*Direção flex em linha*/
     height: 79vh;
     align-content: space-around;                
     flex-wrap: wrap;
-    padding: 0;
-    
-    background-color: rgb(252, 251, 250);
     justify-content: space-around;          /*Ajusta items dentro do conteiner*/
     /*justify-content: space-around;*/
 }
@@ -134,11 +138,12 @@ body{
 }
 /*Imagem stream*/
 .img-stream{
-    padding: 0;
+    padding: 1px;
+    
 } 
 
 .img-commerce{
-    
+    padding: 1px;
     transition: 0.5s;
     
     /*letter-spacing: 1rem;*/
@@ -153,8 +158,10 @@ body{
 /*Imagem e-commerce*/
 
 .title-stream-commerce{
-    background-color: transparent;
+    
+    color: rgb(164, 68, 254);
     display: flex;
+    flex-wrap: wrap;
     padding-right: 20vw;
     padding-left: 20vw;
     width: 58vw;
@@ -170,7 +177,25 @@ body{
     height: 100vh;
 }
 
-@media (max-width:1301){
+.container-rodape{
+    background-color: rgb(241, 224, 224);
+    color: rgb(164, 68, 254);
+    display: flex;
+    width: auto;
+    height: 20vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.box-icons{ 
+    justify-content: center;
+
+    width: 2.8rem;
+}
+
+@media (max-width:1301px){
     article {
         width: 100%;
 }
